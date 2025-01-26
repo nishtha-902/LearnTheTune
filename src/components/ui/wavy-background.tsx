@@ -29,12 +29,12 @@ export const WavyBackground = ({
   [key: string]: any;
 }) => {
   const noise = createNoise3D();
-  let w: number,
-  let h: number,
-  let nt: number,
-  let i: number,
-  let x: number,
-  let ctx: any,
+  let w: number;
+  let h: number;
+  let nt: number;
+  let i: number;
+  let x: number;
+  let ctx: any;
   let canvas: any;
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const getSpeed = () => {
@@ -85,7 +85,7 @@ export const WavyBackground = ({
     }
   };
 
-  const animationId: number;
+  let animationId: number;
   const render = () => {
     ctx.fillStyle = backgroundFill || "black";
     ctx.globalAlpha = waveOpacity || 0.5;
