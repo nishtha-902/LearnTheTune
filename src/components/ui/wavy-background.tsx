@@ -29,7 +29,7 @@ export const WavyBackground = ({
   [key: string]: any;
 }) => {
   const noise = createNoise3D();
-  let w: number,
+  const w: number,
     h: number,
     nt: number,
     i: number,
@@ -85,7 +85,7 @@ export const WavyBackground = ({
     }
   };
 
-  let animationId: number;
+  const animationId: number;
   const render = () => {
     ctx.fillStyle = backgroundFill || "black";
     ctx.globalAlpha = waveOpacity || 0.5;
