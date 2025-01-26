@@ -30,12 +30,12 @@ export const WavyBackground = ({
 }) => {
   const noise = createNoise3D();
   const w: number,
-    h: number,
-    nt: number,
-    i: number,
-    x: number,
-    ctx: any,
-    canvas: any;
+  const h: number,
+  const nt: number,
+  const i: number,
+  const x: number,
+  const ctx: any,
+  const canvas: any;
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const getSpeed = () => {
     switch (speed) {
